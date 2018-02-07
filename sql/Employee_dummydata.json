@@ -1,0 +1,98 @@
+[
+    {
+      "Photo": "/alias/ClarkKent.png",
+      "Founder": 1,
+      "Status": "Active",
+      "Name": "Clark Kent"
+    },
+    {
+      "Photo": "/alias/BruceWayne.png",
+      "Founder": 1,
+      "Status": "Active",
+      "Name": "Bruce Wayne"
+    },
+    {
+      "Photo": "/alias/DianaPrince.png",
+      "Founder": 1,
+      "Status": "Active",
+      "Name": "Diana Prince"
+    },
+    {
+      "Photo": "/alias/BarryAllen.png",
+      "Founder": 1,
+      "Status": "Active",
+      "Name": "Barry Allen"
+    },
+    {
+      "Photo": "/alias/HalJordan.png",
+      "Founder": 1,
+      "Status": "Active",
+      "Name": "Hal Jordan"
+    },
+    {
+      "Photo": "/alias/JohnJones.png",
+      "Founder": 1,
+      "Status": "Active",
+      "Name": "John Jones"
+    },
+    {
+      "Photo": "/alias/ArthurCurry.png",
+      "Founder": 1,
+      "Status": "Active",
+      "Name": "Arthur Curry"
+    },
+    {
+      "Photo": "/alias/OliverQueen.png",
+      "Founder": 0,
+      "Status": "Active",
+      "Name": "Oliver Queen"
+    },
+    {
+      "Photo": "/alias/RayPalmer.png",
+      "Founder": 0,
+      "Status": "Active",
+      "Name": "Ray Palmer"
+    },
+    {
+      "Photo": "/alias/CarterHall.png",
+      "Founder": 0,
+      "Status": "Active",
+      "Name": "Carter Hall"
+    },
+    {
+      "Photo": "/alias/DinahLaurelLance.png",
+      "Founder": 0,
+      "Status": "Active",
+      "Name": "Dinah Laurel Lance"
+    },
+    {
+      "Photo": "/alias/RalphDibny.png",
+      "Founder": 0,
+      "Status": "Deceased",
+      "Name": "Ralph Dibny"
+    },
+    {
+      "Photo": "/alias/JohnSmith.png",
+      "Founder": 0,
+      "Status": "Unknown",
+      "Name": "John Smith"
+    },
+    {
+      "Photo": "/alias/ShieraHall.png",
+      "Founder": 0,
+      "Status": "Active",
+      "Name": "Shiera Hall"
+    },
+    {
+      "Photo": "/alias/ZatannaZatara.png",
+      "Founder": 0,
+      "Status": "Active",
+      "Name": "Zatanna Zatara"
+    },
+    {
+      "Photo": "/alias/RonnieRaymond.png",
+      "Founder": 0,
+      "Status": "Active",
+      "Name": "Ronnie Raymond"
+    }
+  ]
