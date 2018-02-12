@@ -40,29 +40,7 @@ var promise = Kinvey.User.logout()
     })
     .then(function(user) {
         console.log('logged in');
-        var employees_ds = Kinvey.DataStore.collection('Employees'),
-            query = new Kinvey.Query(),
-            stream;
-
-        query.descending('Founder');
-        query.ascending('Name');
-        stream = employees_ds.find(query);
-        stream.subscribe(
-            function onNext(employees) {
-                console.log("data retrieved");
-                var wrapper = document.getElementById('wrapper');
-                wrapper.innerHTML = '';
-                employees.forEach(function(employee) {
-                    wrapper.innerHTML += employeeTemplate(employee);
-                });
-            },
-            function onError(error) {
-                console.log(error);
-            },
-            function onComplete() {
-                // do nothing
-            }
-        );
+        getData();
     })
     .catch(function(error) {
         console.log(error);
@@ -71,3 +49,29 @@ var promise = Kinvey.User.logout()
 .catch(function(error) {
     console.log(error);
 });
+
+function getData() {
+    var employees_ds = Kinvey.DataStore.collection('Employees'),
+        query = new Kinvey.Query(),
+        stream;
+
+    query.descending('Founder');
+    query.ascending('Name');
+    stream = employees_ds.find(query);
+    stream.subscribe(
+        function onNext(employees) {
+            console.log("data retrieved");
+            var wrapper = document.getElementById('wrapper');
+            wrapper.innerHTML = '';
+            employees.forEach(function(employee) {
+                wrapper.innerHTML += employeeTemplate(employee);
+            });
+        },
+        function onError(error) {
+            console.log(error);
+        },
+        function onComplete() {
+            // do nothing
+        }
+    );
+}
