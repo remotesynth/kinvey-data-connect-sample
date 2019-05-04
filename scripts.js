@@ -59,18 +59,18 @@ function getData() {
     query.ascending('Name');
     stream = employees_ds.find(query);
     stream.subscribe(
-        function onNext(employees) {
+        (employees) => {
             console.log("data retrieved");
             var wrapper = document.getElementById('wrapper');
             wrapper.innerHTML = '';
-            employees.forEach(function(employee) {
+            employees.forEach((employee) => {
                 wrapper.innerHTML += employeeTemplate(employee);
             });
         },
-        function onError(error) {
+        (error) => {
             console.log(error);
         },
-        function onComplete() {
+        () => {
             // do nothing
         }
     );
